@@ -1,0 +1,22 @@
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .header-content { flex-direction: column; gap: 1rem; }
+  .sidebar { width: 100%; height: auto; border-right: none; border-bottom: 1px solid hsl(var(--border)); }
+  .studio-layout { flex-direction: column; }
+  .transport-controls { padding: 0.75rem; }
+  .transport-controls .flex { flex-wrap: wrap; gap: 0.5rem; }
+  .transport-button { min-width: 2.5rem; min-height: 2.5rem; }
+  .audio-visualizer { height: 60px !important; }
+  .dialog-content { width: 95vw; max-width: none; margin: 1rem; }
+  .desktop-only { display: none; }
+}
+
+@media (max-width: 480px) {
+  .header-content h1 { font-size: 1.25rem; }
+  .transport-controls .flex { flex-direction: column; align-items: stretch; }
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .button, .transport-button { min-height: 44px; min-width: 44px; }
+  .slider-thumb { width: 24px; height: 24px; }
+}
